@@ -26,11 +26,11 @@ do{
         console.log("You entered : ",guess);
         console.log("Your ramaining chance : ",chances);
     }
-}while(guess != number || chances == 0); // break the loop if guess number is equal.
+}while(guess != number && chances != 0); // break the loop if guess number is equal.
 
 let score = 10 - chances;
 
-if(score == 0 ){
+if(chances == 0 ){
     console.log("You take more than 10 chances \n Sorry, You loss the game.");
 }
 else{
